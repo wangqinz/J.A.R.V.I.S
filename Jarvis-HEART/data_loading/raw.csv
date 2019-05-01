@@ -1,0 +1,148 @@
+%#% format : intent,text,entities,value
+%#%     entities -> ,entity1|entity2|entity3,
+%#%		value.   -> ,value1|value2|value3,
+%#%	$$ means start a module input
+%#%	 	--$m means module start
+%#%	 	--$m scd time means module ends
+%#%		--$v means value start
+%#%		--$v scd time means value ends
+
+%#%	--------------- ask function ---------------
+$$
+--$m
+identify,,
+who are u?,who are you?,what can u do,what can you do?,what is your name,whats your name
+usage,what can you help?,what can you do for me?
+--$m
+$$
+
+%#%	--------------- greet ---------------
+$$
+--$m
+greet,,
+hey,hello,hi,hey man,hey buddy,yo,hei,hey dude
+whats up,sup,sup man
+good morning,good afternoon,good evening
+how are you?,how are you,how re u
+--$m
+$$
+
+%#%	--------------- goodbye ---------------
+$$
+--$m
+goodbye,,
+see u later,see u then,see you,see you later,bye,goodbye,byebye
+good night
+--$m
+$$
+
+%#%	--------------- thankyou ---------------
+$$
+--$m
+thankyou,,
+thanks,thank you, thank u,thanks man,thanks mate
+nice work,well done,good,nice,excellent
+--$m
+$$
+
+
+%#%	--------------- emotion_pos ---------------
+$$
+--$m
+emotion_pos,,
+i love u,i love you,love you,love,love u so much,love u sooooo much
+you are so nice,you are beautiful
+--$m
+$$
+
+%#%	--------------- emotion_neg ---------------
+$$
+--$m
+emotion_neg,,
+i hate you,i hate u,hate u, fuck,fuck you,damn it,shit,shut up,shut the fuck up
+you idiot,stupid asshole,shitbreak
+--$m
+$$
+
+
+%#%	--------------- request weather tomorrow ---------------
+$$$
+--$m
+request_weather,location|$1, time|$2
+weather $2 in $1
+I want to know the weather $2 in $1
+please tell me the weather $2 in $1
+Do you know what is the weather $2 in $1
+inform me $2 s weather in $1
+what is $2 s weather in $1
+--$m
+--v$1
+pittsburgh,san francisco,New York,Phoenix,Shanghai,Beijing,Los Santos,Boston,berkeley
+--v$1
+--v$2
+tomorrow,tmr
+--v$2
+$$$
+
+
+%#%	--------------- request time ---------------
+$$
+--$m
+request_time,,
+time,tell me time,report time,what time is it?,when is it now?,when is it now?,what is the time now?
+--$m
+$$
+
+
+
+%#%	--------------- request weather ---------------
+$$
+--$m
+request_weather,location
+weather in $
+I want to know the weather in $
+please tell me the weather in $
+Do you know what is the weather today in $
+inform me the weather in $
+--$m
+--$v
+pittsburgh,san francisco,New York,Phoenix,Shanghai,Beijing,Los Santos,Boston,berkeley
+--$v
+$$
+
+%#%	--------------- request streamer ---------------
+$$
+--$m
+request_streamer,game
+who is streaming $ now,streamers for $ now,stream $,$ streamers,$ streamer,streamer $
+who is on streaming $ now
+--$m
+--$v
+overwatch,dota,cs,dota 2,fifa,doodle jump
+--$v
+$$
+
+%#%	--------------- set reminder ---------------
+$$$
+--$m
+set_reminder,time|$1, content|$2
+I want to set a reminder at $1 for $2
+I want to set a reminder for $2 at $1 
+reminder at $1 for $2
+reminder at $1 : $2
+reminder for $2 at $1 
+remind me at $1 for $2
+remind me at $1 : $2
+remind me for $2 at $1
+--$m
+--v$1
+8,16:30,23:59,9:00,0:00,12:02,13
+--v$1
+--v$2
+write report,cook dinner,call ellie,go gym,play games with my friends,take a shower
+--v$2
+$$$
+
+
+
+

@@ -1,0 +1,584 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see u later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "pittsburgh",
+            "entity": "location",
+            "start": 11,
+            "end": 21
+          }
+        ],
+        "text": "weather in pittsburgh"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "san francisco",
+            "entity": "location",
+            "start": 11,
+            "end": 24
+          }
+        ],
+        "text": "weather in san francisco"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "New York",
+            "entity": "location",
+            "start": 11,
+            "end": 19
+          }
+        ],
+        "text": "weather in New York"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Phoenix",
+            "entity": "location",
+            "start": 11,
+            "end": 18
+          }
+        ],
+        "text": "weather in Phoenix"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Shanghai",
+            "entity": "location",
+            "start": 11,
+            "end": 19
+          }
+        ],
+        "text": "weather in Shanghai"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Beijing",
+            "entity": "location",
+            "start": 11,
+            "end": 18
+          }
+        ],
+        "text": "weather in Beijing"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Los Santos",
+            "entity": "location",
+            "start": 11,
+            "end": 21
+          }
+        ],
+        "text": "weather in Los Santos"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Boston",
+            "entity": "location",
+            "start": 11,
+            "end": 17
+          }
+        ],
+        "text": "weather in Boston"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "berkeley",
+            "entity": "location",
+            "start": 11,
+            "end": 19
+          }
+        ],
+        "text": "weather in berkeley"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "pittsburgh",
+            "entity": "location",
+            "start": 30,
+            "end": 40
+          }
+        ],
+        "text": "I want to know the weather in pittsburgh"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "san francisco",
+            "entity": "location",
+            "start": 30,
+            "end": 43
+          }
+        ],
+        "text": "I want to know the weather in san francisco"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "New York",
+            "entity": "location",
+            "start": 30,
+            "end": 38
+          }
+        ],
+        "text": "I want to know the weather in New York"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Phoenix",
+            "entity": "location",
+            "start": 30,
+            "end": 37
+          }
+        ],
+        "text": "I want to know the weather in Phoenix"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Shanghai",
+            "entity": "location",
+            "start": 30,
+            "end": 38
+          }
+        ],
+        "text": "I want to know the weather in Shanghai"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Beijing",
+            "entity": "location",
+            "start": 30,
+            "end": 37
+          }
+        ],
+        "text": "I want to know the weather in Beijing"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Los Santos",
+            "entity": "location",
+            "start": 30,
+            "end": 40
+          }
+        ],
+        "text": "I want to know the weather in Los Santos"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Boston",
+            "entity": "location",
+            "start": 30,
+            "end": 36
+          }
+        ],
+        "text": "I want to know the weather in Boston"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "berkeley",
+            "entity": "location",
+            "start": 30,
+            "end": 38
+          }
+        ],
+        "text": "I want to know the weather in berkeley"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "pittsburgh",
+            "entity": "location",
+            "start": 30,
+            "end": 40
+          }
+        ],
+        "text": "please tell me the weather in pittsburgh"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "san francisco",
+            "entity": "location",
+            "start": 30,
+            "end": 43
+          }
+        ],
+        "text": "please tell me the weather in san francisco"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "New York",
+            "entity": "location",
+            "start": 30,
+            "end": 38
+          }
+        ],
+        "text": "please tell me the weather in New York"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Phoenix",
+            "entity": "location",
+            "start": 30,
+            "end": 37
+          }
+        ],
+        "text": "please tell me the weather in Phoenix"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Shanghai",
+            "entity": "location",
+            "start": 30,
+            "end": 38
+          }
+        ],
+        "text": "please tell me the weather in Shanghai"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Beijing",
+            "entity": "location",
+            "start": 30,
+            "end": 37
+          }
+        ],
+        "text": "please tell me the weather in Beijing"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Los Santos",
+            "entity": "location",
+            "start": 30,
+            "end": 40
+          }
+        ],
+        "text": "please tell me the weather in Los Santos"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Boston",
+            "entity": "location",
+            "start": 30,
+            "end": 36
+          }
+        ],
+        "text": "please tell me the weather in Boston"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "berkeley",
+            "entity": "location",
+            "start": 30,
+            "end": 38
+          }
+        ],
+        "text": "please tell me the weather in berkeley"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "pittsburgh",
+            "entity": "location",
+            "start": 41,
+            "end": 51
+          }
+        ],
+        "text": "Do you know what is the weather today in pittsburgh"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "san francisco",
+            "entity": "location",
+            "start": 41,
+            "end": 54
+          }
+        ],
+        "text": "Do you know what is the weather today in san francisco"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "New York",
+            "entity": "location",
+            "start": 41,
+            "end": 49
+          }
+        ],
+        "text": "Do you know what is the weather today in New York"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Phoenix",
+            "entity": "location",
+            "start": 41,
+            "end": 48
+          }
+        ],
+        "text": "Do you know what is the weather today in Phoenix"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Shanghai",
+            "entity": "location",
+            "start": 41,
+            "end": 49
+          }
+        ],
+        "text": "Do you know what is the weather today in Shanghai"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Beijing",
+            "entity": "location",
+            "start": 41,
+            "end": 48
+          }
+        ],
+        "text": "Do you know what is the weather today in Beijing"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Los Santos",
+            "entity": "location",
+            "start": 41,
+            "end": 51
+          }
+        ],
+        "text": "Do you know what is the weather today in Los Santos"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Boston",
+            "entity": "location",
+            "start": 41,
+            "end": 47
+          }
+        ],
+        "text": "Do you know what is the weather today in Boston"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "berkeley",
+            "entity": "location",
+            "start": 41,
+            "end": 49
+          }
+        ],
+        "text": "Do you know what is the weather today in berkeley"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "pittsburgh",
+            "entity": "location",
+            "start": 25,
+            "end": 35
+          }
+        ],
+        "text": "inform me the weather in pittsburgh"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "san francisco",
+            "entity": "location",
+            "start": 25,
+            "end": 38
+          }
+        ],
+        "text": "inform me the weather in san francisco"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "New York",
+            "entity": "location",
+            "start": 25,
+            "end": 33
+          }
+        ],
+        "text": "inform me the weather in New York"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Phoenix",
+            "entity": "location",
+            "start": 25,
+            "end": 32
+          }
+        ],
+        "text": "inform me the weather in Phoenix"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Shanghai",
+            "entity": "location",
+            "start": 25,
+            "end": 33
+          }
+        ],
+        "text": "inform me the weather in Shanghai"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Beijing",
+            "entity": "location",
+            "start": 25,
+            "end": 32
+          }
+        ],
+        "text": "inform me the weather in Beijing"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Los Santos",
+            "entity": "location",
+            "start": 25,
+            "end": 35
+          }
+        ],
+        "text": "inform me the weather in Los Santos"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "Boston",
+            "entity": "location",
+            "start": 25,
+            "end": 31
+          }
+        ],
+        "text": "inform me the weather in Boston"
+      },
+      {
+        "intent": "request_weather",
+        "entities": [
+          {
+            "value": "berkeley",
+            "entity": "location",
+            "start": 25,
+            "end": 33
+          }
+        ],
+        "text": "inform me the weather in berkeley"
+      },
+      {
+        "intent": "request_time",
+        "text": "time"
+      },
+      {
+        "intent": "request_time",
+        "text": "report time"
+      },
+      {
+        "intent": "request_time",
+        "text": "what time is it?"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

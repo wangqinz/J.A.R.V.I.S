@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/lovebaxi/Documents/git_repo/J.A.R.V.I.S/Jarvis-HEART/./nlu_model/jarvis_nlu/default/current/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/Users/lovebaxi/Documents/git_repo/J.A.R.V.I.S/Jarvis-HEART/./nlu_model/jarvis_nlu/default/current/intent_classifier_tensorflow_embedding.ckpt"

@@ -1,0 +1,28 @@
+<style type="text/css">
+	.query{
+		
+		width: 100%;
+		height: 40px;
+		font-size: 30px;
+	}
+	.blank{
+		height: 30%;
+	}
+	.ctner{
+		margin: auto;
+		width: 80%;
+	}
+</style>
+
+<div class="blank"></div>
+<div class="ctner">
+<form action="{% url 'task' %}"> 
+	<input type="text" name = "query" value = "{{input}}" class="query">
+</form>
+
+</div>
+<div class="blank"></div>
+
+<div class="ctner">
+	{{message}}
+</div>

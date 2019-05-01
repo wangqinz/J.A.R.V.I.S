@@ -1,0 +1,42 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "time",
+        "location",
+        "game",
+        "content"
+      ]
+    },
+    "action_restart": {
+      "slots": []
+    },
+    "utter_emo_pos": {
+      "slots": []
+    },
+    "utter_identify": {
+      "slots": []
+    },
+    "utter_thank": {
+      "slots": []
+    },
+    "utter_emo_neg": {
+      "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.10.1",
+  "max_histories": [
+    3,
+    5,
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "policy.RestaurantPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
+  ]
+}

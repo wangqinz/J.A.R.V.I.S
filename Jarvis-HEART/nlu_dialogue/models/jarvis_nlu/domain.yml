@@ -1,0 +1,97 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_thank
+- utter_identify
+- utter_emo_pos
+- utter_emo_neg
+- action_req_time
+- action_req_weather
+- action_req_streamer
+- action_set_reminder
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_thank
+- utter_identify
+- utter_emo_pos
+- utter_emo_neg
+- bot.AskTime
+- bot.AskWeather
+- bot.checkTwich
+- bot.setReminder
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- time
+- game
+- content
+intents:
+- greet
+- goodbye
+- thankyou
+- identify
+- emotion_pos
+- emotion_neg
+- request_streamer
+- set_reminder
+- request_weather
+- request_time
+slots:
+  content:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  game:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  matches:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  time:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_default:
+  - text: sry, I can't understand.
+  - text: sorry, I can't understand.
+  - text: sorry, I can't understand :(
+  - text: sorry, but wtf was that?
+  - text: sorry, but what was that?
+  utter_emo_neg:
+  - text: well...
+  - text: -_-
+  - text: Looks like u re stressed out. What about taking a rest?
+  - text: what the hell :-O
+  utter_emo_pos:
+  - text: <3
+  - text: :-*
+  - text: :-p
+  utter_goodbye:
+  - text: goodbye :/
+  - text: Bye-bye
+  - text: see u
+  utter_greet:
+  - text: hey there!
+  - text: hi there
+  - text: hello
+  - text: hi 8-)
+  - text: good to see u :)
+  utter_identify:
+  - text: My name is Jarvis. I'm your friend :)
+  - text: I'm Jarvis. I can do anything reasonable for you 8-)
+  - text: My name is Jarvis. You can ask me weather, time, streamer on Twitter as
+      well as set a reminder...I'm learning day by day!
+  - text: That's an interesting question 8-). You can find it out by yourself
+  utter_thank:
+  - text: np :-p
+  - text: no problem ;)
+  - text: that's what I'm here for :-*
+  - text: u're welcome ! :D
+  - text: my pleasure !
