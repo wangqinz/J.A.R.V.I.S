@@ -1,0 +1,78 @@
+slots:
+  location:
+    type: text
+  time:
+    type: text
+  game:
+    type: text
+  content:
+    type: text
+  matches:
+    type: unfeaturized
+entities:
+- location
+- time
+- game
+- content
+
+intents:
+ - greet
+ - goodbye
+ - thankyou
+ - identify
+ - emotion_pos
+ - emotion_neg
+ - request_streamer
+ - set_reminder
+ - request_weather
+ - request_time
+templates:
+  utter_greet:
+    - "hey there!"
+    - "hi there"
+    - "hello"
+    - "hi 8-)"
+    - "good to see u :)"
+  utter_goodbye:
+    - "goodbye :/"
+    - "Bye-bye"
+    - "see u"
+  utter_default:
+    - "sry, I can't understand."
+    - "sorry, I can't understand."
+    - "sorry, I can't understand :("
+    - "sorry, but wtf was that?"
+    - "sorry, but what was that?"
+  utter_thank:
+    - "np :-p"
+    - "no problem ;)"
+    - "that's what I'm here for :-*"
+    - "u're welcome ! :D"
+    - "my pleasure !"
+  utter_emo_pos:
+    - "<3"
+    - ":-*"
+    - ":-p"
+  utter_emo_neg:
+    - "well..."
+    - "-_-"
+    - "Looks like u re stressed out. What about taking a rest?"
+    - "what the hell :-O"
+  utter_identify:
+    - "My name is Jarvis. I'm your friend :)"
+    - "I'm Jarvis. I can do anything reasonable for you 8-)"
+    - "My name is Jarvis. You can ask me weather, time, streamer on Twitter as well as set a reminder...I'm learning day by day!"
+    - "That's an interesting question 8-). You can find it out by yourself"
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_thank
+- utter_identify
+- utter_emo_pos
+- utter_emo_neg
+- bot.AskTime
+- bot.AskWeather
+- bot.checkTwich
+- bot.setReminder
